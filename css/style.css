@@ -49,7 +49,7 @@
 		a:hover {
 			border-bottom-color: transparent;
 /*			color: #49bf9d !important;*/
-            color: #24A9BF !important;
+            color: #1c8598 !important;
 			text-decoration: none;
 		}
 
@@ -954,10 +954,13 @@
 		}
 
 /* Header */
+	#skel-layers-wrapper {
+		padding-top: 3em;
+	}
 
 	#header {
-		background-color: #1f1815;*
-/*        background-color: #2BBCD4;**/
+/*		background-color: #1f1815;**/
+        background-color: #2BBCD4;*
 		background-attachment: scroll,								fixed;
 		background-image: url("images/new-overlay.png"), url("../images/bg.jpg");
 /*        background-image: url("images/new-overlay.png"), url("../images/toronto.jpg");*/
@@ -995,6 +998,79 @@
 			width: 6.25em;
 		}
 
+		#header nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 1.25em;
+			top: 0;
+			vertical-align: middle;
+		}
+
+			#header nav > ul {
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+			}
+
+				#header nav > ul > li {
+					border-radius: 4px;
+					display: inline-block;
+					margin-left: 1em;
+					padding-left: 0;
+				}
+
+					#header nav > ul > li a {
+						-moz-transition: color 0.2s ease-in-out;
+						-webkit-transition: color 0.2s ease-in-out;
+						-o-transition: color 0.2s ease-in-out;
+						-ms-transition: color 0.2s ease-in-out;
+						transition: color 0.2s ease-in-out;
+						color: #ccc;
+/*                        color: #fff;*/
+						display: inline-block;
+						text-decoration: none;
+					}
+
+						#header nav > ul > li a:hover {
+/*							color: #2BBCD4;*/
+							color: #fff;
+						}
+
+					#header nav > ul > li:first-child {
+						margin-left: 0;
+					}
+
+					#header nav > ul > li .button {
+						height: 2.25em;
+						line-height: 2.25em;
+						margin-bottom: 0;
+						padding: 0 1em;
+						position: relative;
+						top: -0.075em;
+						vertical-align: middle;
+					}
+
+/*
+		#header .container {
+			position: relative;
+		}
+
+			#header .container h1 {
+				left: 0;
+			}
+
+			#header .container nav {
+				right: 0;
+			}
+*/
+
+/* nav */
+    #nav {
+        display: none;
+    }
+
+
 /* Footer */
 
 	#footer {
@@ -1011,11 +1087,11 @@
 		}
 
 			#footer .icons a {
-				color: rgba(255, 255, 255, 0.5);
+				color: rgba(255, 255, 255, 0.65);
 			}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.65);
 			font-size: 0.8em;
 			list-style: none;
 			margin: 1em 0 0 0;

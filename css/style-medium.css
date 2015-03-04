@@ -17,11 +17,15 @@
 	}
 
 /* Header */
+	#skel-layers-wrapper {
+		padding-top: 0;
+	}
 
 	#header {
 		background-attachment: scroll;
 		background-position: top left,	center center;
 		background-size: auto,		cover;
+		background-repeat: repeat,							no-repeat;
 		left: auto;
 		padding: 6em 4em;
 		position: relative;
@@ -42,8 +46,9 @@
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #1f1815;
-		background-image: url("images/overlay.png"), url("../images/bg.jpg");
+		background-color: #2BBCD4;
+/*		background-color: #1f1815;*/
+		background-image: url("images/new-overlay.png"), url("../images/bg.jpg");
 		background-position: top left,						bottom center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -78,3 +83,83 @@
 		padding: 6em 4em;
 		width: 100%;
 	}
+
+	#navButton .toggle {
+		text-decoration: none;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+		#navButton .toggle:before {
+			content: "";
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		#navButton .toggle:before {
+			background: rgba(144, 144, 144, 0.65);
+			border-radius: 4px;
+			color: #fff;
+			display: block;
+			font-size: 16px;
+			height: 2.25em;
+			left: 0.5em;
+			line-height: 2.25em;
+			position: absolute;
+			text-align: center;
+			top: 0.5em;
+			width: 3.5em;
+		}
+
+	#navPanel {
+		background: #444;
+		color: #fff;
+	}
+
+		#navPanel nav {
+			padding: 0.5em 1.25em;
+		}
+
+			#navPanel nav ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+				#navPanel nav ul li {
+					padding: 0;
+				}
+
+					#navPanel nav ul li:first-child a:not(.button), #navPanel nav ul li:first-child span:not(.button) {
+						border-top: 0;
+					}
+
+					#navPanel nav ul li a:not(.button), #navPanel nav ul li span:not(.button) {
+                        border-top: none;
+                        border-bottom: none;
+						color: #fff;
+						display: block;
+						padding: 0.75em 0;
+						text-decoration: none;
+					}
+
+                    #navPanel nav ul li a:hover {
+                        color: #2BBCD4 !important;
+                    }
+
+			#navPanel nav .button {
+				width: 100%;
+			}
+
+/* nav */
+    #nav {
+        display: inline-block;
+    }
+
