@@ -46,9 +46,10 @@
 
 	#footer {
 		background-attachment: scroll;
-		background-color: #2BBCD4;
+/*		background-color: #2BBCD4;*/
+		background-color: #121210;
 /*		background-color: #1f1815;*/
-		background-image: url("images/new-overlay.png"), url("../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../images/sky.jpg");
 		background-position: top left,						bottom center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
